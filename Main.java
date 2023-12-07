@@ -16,6 +16,12 @@ public class Main {
         if(isValidLastName==false){
             System.out.println("Please enter valid LastName");
         }
+        System.out.println("Please enter email id: ");
+        boolean isValidEmailId = Pattern.matches("^[a-z]{0,40}[@]{1}[a-z]{0,15}[.]{1}[a-z]{5}",sc.nextLine());
+        if(isValidEmailId==false){
+            System.out.println("Please enter valid email id");
+        }
+
 
     }
 }
