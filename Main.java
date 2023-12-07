@@ -11,7 +11,11 @@ public class Main {
         if(isValidFirstName==false){
             System.out.println("Please enter valid name");
         }
-
+        System.out.println("Please enter Last name FirstName: ");
+        boolean isValidLastName = Pattern.matches("^[A-Z]{1}[a-z]{0,20}",sc.nextLine());
+        if(isValidLastName==false){
+            System.out.println("Please enter valid LastName");
+        }
 
     }
 }
